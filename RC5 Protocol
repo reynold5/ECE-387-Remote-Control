@@ -1,1 +1,26 @@
+References: http://www.circuitbasics.com/arduino-ir-remote-receiver-tutorial/
+Using Arduino to determine RC5 codes used for button, gives resulting hexadecimal number.
 
+#include <IRremote.h>
+
+const int RECV_PIN = 7;
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+void setup(){
+  Serial.begin(9600);
+  irrecv.enableIRIn();
+  irrecv.blink13(true);
+}
+
+void loop(){
+  if (irrecv.decode(&results)){
+        Serial.println(results.value, HEX);
+        irrecv.resume();
+
+//16 bits translated in hexadecimal, first 8 bits are address, last 8 bits are command function
+//ex. case OxFFC35D  Channel Button
+       case OxFFA35D  Power Button
+       case OxFFA36D  Volume Button
+  }
+}
