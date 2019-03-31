@@ -10,6 +10,8 @@ Microcontroller - $5.00
 
 1 IRLEDS - $.20 per unit
 
+Wiring - Negatable
+
 Power Method: Power on schmatic
 
 Power Analyis: If button is constantly in an active state it would run for 16.6 hours, (2500mAh/150mA).
