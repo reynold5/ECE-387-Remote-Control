@@ -21,3 +21,6 @@ Power Analyis: If button is constantly in an active state it would run for 16.6 
 IR LED Drain: Approximately 100mA
 
 Microprocessor Arduino: 50mA
+
+Simple Schematic for Remote Control: http://www.diy-electronic-projects.com/projects/293/bigs/irtest.gif
+Taken from: http://2.14.buchner-sprachdienstleistungen.de/ir_sensor_for_remote_control_basic_test_diagram.php
